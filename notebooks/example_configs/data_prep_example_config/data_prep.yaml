@@ -1,0 +1,4 @@
+data_preparation_steps:
+  - name: "core.data_preparation.pipeline.DropColumns"
+    params:
+      columns: ["Selfi_Cam"]

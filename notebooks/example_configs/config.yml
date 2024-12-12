@@ -1,0 +1,11 @@
+# <component>
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+name: train_credit_defaults_model
+display_name: training-mobile-data
+description: Training job for mobile price data
+# version: 1 # Not specifying a version will automatically update the version
+code: .
+environment: azureml:docker-context-repo-based-v2:1
+command: >-
+  python main.py 
+# </component>

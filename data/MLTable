@@ -1,0 +1,8 @@
+# MLTable definition file
+
+paths:
+  - file: ./Mobile-Price-Prediction-cleaned_data.csv
+transformations:
+  - read_delimited:
+        delimiter: ','
+        encoding: 'ascii'

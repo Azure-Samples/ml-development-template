@@ -1,0 +1,15 @@
+{
+  "input_data": {
+    "columns": ['Ratings', 'RAM',
+'ROM',
+'Mobile_Size',
+'Primary_Cam',
+'Selfi_Ca',
+'Battery_Power'],
+    "index": [0, 1],
+    "data": [
+            [4, 6, 64, 5, 48, 11, 4100],
+            [8, 8, 128, 6, 48, 11, 4000]
+        ]
+  }
+}

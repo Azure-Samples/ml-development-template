@@ -1,102 +1,111 @@
-# ML Library
+# <img src="./docs/azure_logo.png" alt="Azure Logo" style="width:30px;height:30px;"/>  ML Library
 
 ## Streamlining Machine Learning Pipelines
 
-The `Machine Learning` class is a versatile Python tool designed to simplify the creation, optimization, and evaluation of machine learning pipelines. It integrates smoothly with popular libraries such as scikit-learn, Optuna for hyperparameter optimization, and SHAP for model interpretation.
+The **Machine Learning** class is a versatile Python tool designed to simplify the creation, optimization, and evaluation of machine learning pipelines. It integrates seamlessly with popular libraries such as scikit-learn, Optuna (for hyperparameter tuning), and SHAP (for model interpretation).
+
+---
 
 ### Example Usage
 
-For a detailed example using `MLCore`, refer to the `xxxx.ipynb` notebook in this repository. This example demonstrates how to leverage `modue` to streamline the development and optimization of machine learning models.
+For a detailed example using **MLCore**, please refer to the `xxxx.ipynb` notebook in this repository. This notebook demonstrates how to leverage the module to streamline the development and optimization of machine learning models.
+
+---
 
 ### Dataset
 
-To get started, you can use a dataset like the [Mobile Phone Price Prediction Cleaned Dataset](https://www.kaggle.com/datasets/ganjerlawrence/mobile-phone-price-prediction-cleaned-dataset/data) from Kaggle. This dataset provides a practical scenario for applying `MLCore` to predictive modeling tasks.
+Start your experimentation with a practical dataset like the [Mobile Phone Price Prediction Cleaned Dataset](https://www.kaggle.com/datasets/ganjerlawrence/mobile-phone-price-prediction-cleaned-dataset/data) from Kaggle. This dataset offers a real-world scenario for applying MLCore to predictive modeling tasks.
 
+---
 
 ### Setting Up Your Azure ML Workspace
 
-To streamline common tasks and automate complex commands, this project includes a Makefile. You can use make <command> to execute specific tasks defined within the Makefile. For instance:
+This project includes a Makefile to automate common tasks. Use `make <command>` to execute specific tasks defined in the Makefile.
 
-## Step 1: Create a Compute Instance
+#### Step 1: Create a Compute Instance
+Begin by creating a compute instance to run your notebooks.
 
-Start by creating a compute instance to run your notebooks.
-
-## Step 2: Install Poetry and Dependencies
-
-Execute the following command to install `poetry` and its dependencies:
+#### Step 2: Install Poetry and Dependencies
+Install `poetry` and other dependencies by running:
 
 ```bash
 make setup
 ```
 
-This command will trigger the setup process as defined in the `Makefile`. For a comprehensive list of available commands and their functionalities, refer to the `Makefile` itself.
+This command triggers the setup process defined in the Makefile. For a full list of commands and their functionalities, review the Makefile.
 
-> **Note:** If you want to run your notebooks within this virtual environment, you need to add the created environment to the list of available kernels.
+> **Note:** To run your notebooks in this virtual environment, add the created environment to your list of available kernels.
 
-## Step 3: Push Code to Notebooks
-
-You can push your code to the notebooks using either SSH or HTTP. If you choose SSH, follow these steps:
-
-1. Generate an SSH key inside the created compute instance.
+#### Step 3: Push Code to Notebooks
+Push your code to the notebooks using SSH or HTTP:
+1. Generate an SSH key on the compute instance.
 2. Add this SSH key to your Git repository platform.
 
-Once you've set up your environment, you can proceed with the `Getting_Your_Data.ipynb` notebook to understand how to retrieve data, set up your environment, and run jobs.
+Once configured, continue with the `Getting_Your_Data.ipynb` notebook to retrieve data, set up your environment, and execute jobs.
 
 ---
 
-
-
-
 ## Features
 
-This project framework provides the following features:
+This project framework includes the following features:
 
-* Feature 1
-* Feature 2
-* ...
+- Simplified pipeline creation
+- Integrated hyperparameter optimization
+- Model interpretation support
+- Extensible and modular design
+
+---
 
 ## Getting Started
 
 ### Prerequisites
-
-(ideally very short, if any)
-
-- OS
-- Library version
-- ...
+- Operating System: Windows, Linux, or macOS
+- Python (version 3.7 or later)
+- Familiarity with command line operations
 
 ### Installation
+To clone and set up the project:
 
-(ideally very short)
+1. Clone the repository:
+    ```bash
+    git clone [repository URL]
+    ```
+2. Change to the repository directory:
+    ```bash
+    cd [repository name]
+    ```
+3. Install required dependencies via Poetry:
+    ```bash
+    make setup
+    ```
 
-- npm install [package name]
-- mvn install
-- ...
+---
 
-### Quickstart
-(Add steps to get up and running quickly)
+## Quickstart
 
-1. git clone [repository clone url]
-2. cd [repository name]
-3. ...
+Follow these steps to get up and running quickly:
 
+1. Clone the repository and navigate into the folder.
+2. Run `make setup` to install dependencies.
+3. Open the provided Jupyter notebooks and start experimenting.
+
+---
 
 ## Demo
 
-A demo app is included to show how to use the project.
+A demo application is included to showcase the usage of ML Library. To run the demo, follow the steps below:
 
-To run the demo, follow these steps:
+1. Set up your compute instance and install dependencies.
+2. Run the demo using the provided script/notebook.
+3. Enjoy exploring machine learning pipeline creation with ease.
 
-(Add steps to start up the demo)
-
-1.
-2.
-3.
+---
 
 ## Resources
 
-(Any additional resources or related projects)
+- [Documentation](#)
+- [Related Projects](#)
+- [Community Discussions](#)
 
-- Link to supporting information
-- Link to similar sample
-- ...
+For additional resources and guidance, visit our repository linked above.
+

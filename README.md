@@ -6,26 +6,14 @@ The **Machine Learning** class is a versatile Python tool designed to simplify t
 
 ---
 
-### Example Usage
-
-For a detailed example using **MLCore**, please refer to the `03_Testing_modeling.ipynb` notebook in this repository. This notebook demonstrates how to leverage the module to streamline the development and optimization of machine learning models.
-
----
-
-### Dataset
-
-Start your experimentation with a practical dataset like the [Mobile Phone Price Prediction Cleaned Dataset](https://www.kaggle.com/datasets/ganjerlawrence/mobile-phone-price-prediction-cleaned-dataset/data) from Kaggle. This dataset offers a real-world scenario for applying MLCore to predictive modeling tasks.
-
----
-
-### Setting Up Your Azure ML Workspace
+## Setting Up Your Azure ML Workspace
 
 This project includes a Makefile to automate common tasks. Use `make <command>` to execute specific tasks defined in the Makefile.
 
-#### Step 1: Create a Compute Instance
+### Step 1: Create a Compute Instance
 Begin by creating a compute instance to run your notebooks.
 
-#### Step 2: Install Poetry and Dependencies
+### Step 2: Install Poetry and Dependencies
 Install `poetry` and other dependencies by running:
 
 ```bash
@@ -36,27 +24,33 @@ This command triggers the setup process defined in the Makefile. For a full list
 
 > **Note:** To run your notebooks in this virtual environment, add the created environment to your list of available kernels.
 
-#### Step 3: Push Code to Notebooks
+### Step 3: Push Code to Notebooks
 Push your code to the notebooks using SSH or HTTP:
 1. Generate an SSH key on the compute instance.
 2. Add this SSH key to your Git repository platform.
 
 Once configured, continue with the `Getting_Your_Data.ipynb` notebook to retrieve data, set up your environment, and execute jobs.
 
+
+### Step 4: Infrastructure Setup with Bicep
+
+We recommend creating your infrastructure using [Bicep](https://github.com/Azure/bicep) language as demonstrated in our infra example. This example covers:
+
+- **Agent Creation:** Automates the setup of agents for resource management.
+- **AML Workspace Creation:** Provisions an Azure Machine Learning workspace.
+- **GPT Model Deployment:** Provides a complete example for deploying a GPT-based model.
+
+Follow the instructions in the `infra` folder to set up your environment accordingly.
+
 ---
 
-## Features
+## Quickstart
 
-This project framework includes the following features:
+Follow these steps to get up and running quickly:
 
-- Simplified pipeline creation
-- Integrated hyperparameter optimization
-- Model interpretation support
-- Extensible and modular design
-
----
-
-## Getting Started
+1. Clone the repository and navigate into the folder.
+2. Run `make setup` to install dependencies.
+3. Open the provided Jupyter notebooks and start experimenting.
 
 ### Prerequisites
 - Operating System: Windows, Linux, or macOS
@@ -79,15 +73,29 @@ To clone and set up the project:
     make setup
     ```
 
+
+### Example Usage
+
+For a detailed example using **MLCore**, please refer to the `03_Testing_modeling.ipynb` notebook in this repository. This notebook demonstrates how to leverage the module to streamline the development and optimization of machine learning models.
+
+
+### Dataset
+
+Start your experimentation with a practical dataset like the [Mobile Phone Price Prediction Cleaned Dataset](https://www.kaggle.com/datasets/ganjerlawrence/mobile-phone-price-prediction-cleaned-dataset/data) from Kaggle. This dataset offers a real-world scenario for applying MLCore to predictive modeling tasks.
+
+**Note:** It's not ideal to include large datasets in the repository. Instead, consider hosting your data externally (e.g., on cloud storage or a dedicated data repository) and referencing or downloading it as needed.
+
+
 ---
 
-## Quickstart
+## Features
 
-Follow these steps to get up and running quickly:
+This project framework includes the following features:
 
-1. Clone the repository and navigate into the folder.
-2. Run `make setup` to install dependencies.
-3. Open the provided Jupyter notebooks and start experimenting.
+- Simplified pipeline creation
+- Integrated hyperparameter optimization
+- Model interpretation support
+- Extensible and modular design
 
 ---
 
@@ -111,7 +119,7 @@ pytest
 
 ---
 
-### Pre-Commit
+## Pre-Commit
 
 Ensure pre-commit is installed:
 ```bash

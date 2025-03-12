@@ -1,0 +1,87 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "skipVnet": {
+      "value": "${SKIP_VNET}=true"
+    },
+    "environmentName": {
+      "value": "${AZURE_ENV_NAME}"
+    },
+    "location": {
+      "value": "${AZURE_LOCATION}"
+    },
+    "principalId": {
+      "value": "${AZURE_PRINCIPAL_ID}"
+    },
+    "storageAccountName": {
+      "value": "${AZURE_STORAGE_ACCOUNT}"
+    },
+    "storageResourceGroupName": {
+      "value": "${AZURE_STORAGE_RESOURCE_GROUP}"
+    },
+    "azFunctionHostingPlanType": {
+      "value": "flexconsumption"
+    },
+    "aiHubName": {
+        "value": "hub-demo"
+    },
+    "aiHubFriendlyName": {
+      "value": "Agents Hub resource"
+    },
+    "aiHubDescription": {
+      "value": "This is an example AI resource for use in Azure AI Studio."
+    },
+    "aiProjectName": {
+      "value": "project-demo"
+    },
+    "aiProjectFriendlyName": {
+      "value": "Agents Project resource"
+    },
+    "aiProjectDescription": {
+      "value": "This is an example AI Project resource for use in Azure AI Studio."
+    },
+    "tags": {
+      "value": {}
+    },
+    "aiSearchName": {
+      "value": "agent-ai-search"
+    },
+    "capabilityHostName": {
+      "value": "caphost1"
+    },
+    "aiServicesName": {
+      "value": "agent-ai-services"
+    },
+    "modelName": {
+      "value": "gpt-4o"
+    },
+    "modelFormat": {
+      "value": "OpenAI"
+    },
+    "modelVersion": {
+      "value": "2024-05-13"
+    },
+    "modelSkuName": {
+      "value": "Standard"
+    },
+    "modelCapacity": {
+      "value": 100
+    },
+    "modelLocation": {
+      "value": "eastus"
+    },
+    "openAiApiVersion": {
+      "value": "2024-05-01-preview"
+    },
+    "aiServiceAccountResourceId": {
+      "value": ""
+    },
+    "aiSearchServiceResourceId": {
+      "value": ""
+    },
+    "aiStorageAccountResourceId":{
+      "value": ""
+    }
+  }
+}

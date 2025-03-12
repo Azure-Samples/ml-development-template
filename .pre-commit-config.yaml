@@ -1,0 +1,12 @@
+# assuming 
+#   - pytest is in your venv (called .venv)
+#   - your tests are in a folder called tests
+- repo: local
+  hooks:
+  - id: pytest
+    name: pytest
+    entry: pytest tests
+    language: system
+    types: [python]
+    pass_filenames: false
+    always_run: true

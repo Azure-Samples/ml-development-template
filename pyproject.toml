@@ -30,6 +30,8 @@ azure-identity = "*"
 azure-core = "*"
 fsspec = "*"
 azureml-mlflow="1.53.0"
+pytest = "*"
+
 
 
 [build-system]

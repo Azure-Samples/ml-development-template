@@ -8,7 +8,7 @@ The **Machine Learning** class is a versatile Python tool designed to simplify t
 
 ### Example Usage
 
-For a detailed example using **MLCore**, please refer to the `xxxx.ipynb` notebook in this repository. This notebook demonstrates how to leverage the module to streamline the development and optimization of machine learning models.
+For a detailed example using **MLCore**, please refer to the `03_Testing_modeling.ipynb` notebook in this repository. This notebook demonstrates how to leverage the module to streamline the development and optimization of machine learning models.
 
 ---
 
@@ -101,11 +101,35 @@ A demo application is included to showcase the usage of ML Library. To run the d
 
 ---
 
-## Resources
+## Testing with Pytest
 
-- [Documentation](#)
-- [Related Projects](#)
-- [Community Discussions](#)
+This project leverages the [Pytest](https://docs.pytest.org/en/8.2.x/getting-started.html) framework to ensure your code works as expected. To run all tests from the root directory, simply execute:
 
-For additional resources and guidance, visit our repository linked above.
+```bash
+pytest
+```
+
+---
+
+### Pre-Commit
+
+Ensure pre-commit is installed:
+```bash
+pre-commit install
+```
+
+Now, when you commit, the configured hook (running 'pytest tests') configured on `.pre-commit-config.yaml`will run automatically. To manually run all hooks, execute 'pre-commit run --all-files' in the terminal. 
+
+
+## Data Preparation & ETL Repository
+
+For projects with extensive data handling, consider separating your data preparation and ETL processes into a dedicated repository. This approach offers several benefits:
+
+- **Modularity:** Keeps your code organized by isolating data ingestion, transformation, and cleaning logic.
+- **Scalability:** Simplifies updates and scaling when working with large or complex datasets.
+- **Collaboration:** Allows data engineers and analysts to work independently from the core machine learning codebase.
+- **Maintainability:** Enhances version control and testing of your data pipelines.
+
+Leveraging a dedicated repository for data preparation helps streamline the overall workflow and maintain a clean separation between model development and data engineering tasks.
+
 
